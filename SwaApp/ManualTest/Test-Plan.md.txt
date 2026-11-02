@@ -1,0 +1,289 @@
+# Test Plan – SauceDemo Application
+
+## 1. Test Plan Objective
+
+The objective of this test plan is to verify and validate the functionality, usability, reliability, and behavior of the SauceDemo e-commerce application.
+
+The testing will primarily focus on the **Login, Product Listing, Product Sorting, Product Details, Cart, Checkout, and Logout** functionalities.
+
+The goal is to identify functional defects, UI issues, validation problems, boundary conditions, and edge-case scenarios before considering the application ready for release.
+
+---
+
+## 2. Application Under Test
+
+**Application Name:** SauceDemo
+**Application URL:** https://www.saucedemo.com/
+
+SauceDemo is a sample e-commerce web application that allows users to log in, browse products, sort products, add/remove products from the cart, and complete the checkout process.
+
+---
+
+## 3. Scope of Testing
+
+The following modules and functionalities are included in the testing scope:
+
+### 3.1 Login
+
+* Login with valid credentials
+* Login with invalid credentials
+* Login with blank username/password
+* Locked-out user validation
+* Error message validation
+* Login page UI validation
+
+### 3.2 Product Listing
+
+* Verify products are displayed correctly
+* Verify product names and prices
+* Verify product images
+* Verify Add to Cart functionality
+* Verify Remove functionality
+* Verify product count
+
+### 3.3 Product Sorting
+
+* Sort products by Name A to Z
+* Sort products by Name Z to A
+* Sort products by Price Low to High
+* Sort products by Price High to Low
+* Verify sorting accuracy after adding products to cart
+
+### 3.4 Product Details
+
+* Open product details
+* Verify product name
+* Verify product description
+* Verify product price
+* Verify product image
+* Add product to cart from details page
+* Remove product from cart
+
+### 3.5 Cart
+
+* Add a single product
+* Add multiple products
+* Remove a product
+* Remove all products
+* Verify cart item count
+* Verify product details in cart
+* Continue shopping
+* Proceed to checkout
+* Verify cart behavior after page refresh
+
+### 3.6 Checkout
+
+* Checkout with valid information
+* Checkout with blank fields
+* Validate First Name
+* Validate Last Name
+* Validate Postal Code
+* Verify checkout overview
+* Verify item prices
+* Verify total amount
+* Complete checkout
+* Verify order confirmation
+
+### 3.7 Logout
+
+* Logout from the application
+* Verify user is redirected to the login page
+* Verify session behavior after logout
+* Verify protected pages cannot be accessed after logout
+
+---
+
+## 4. Testing Types
+
+The following testing types will be performed:
+
+### Functional Testing
+
+To verify that each application function works according to the expected business behavior.
+
+### UI Testing
+
+To verify the layout, labels, buttons, fields, images, messages, and overall user interface.
+
+### Negative Testing
+
+To verify that the application handles invalid inputs and unexpected user actions correctly.
+
+### Boundary Testing
+
+To verify application behavior at minimum, maximum, empty, and boundary input conditions.
+
+### Edge Case Testing
+
+To identify unexpected behavior under unusual or extreme user actions such as refreshing pages, using the browser Back button, removing all products, and submitting empty forms.
+
+### Regression Testing
+
+To ensure that existing functionality continues to work after changes or fixes.
+
+### Compatibility Testing
+
+To verify application behavior across supported browsers and operating systems.
+
+---
+
+## 5. Test Environment
+
+| Parameter        | Details                    |
+| ---------------- | -------------------------- |
+| Application      | SauceDemo                  |
+| URL              | https://www.saucedemo.com/ |
+| Testing Type     | Manual Testing             |
+| Browser          | Google Chrome              |
+| Operating System | Windows                    |
+| Test Environment | Web Application            |
+| Network          | Stable Internet Connection |
+
+---
+
+## 6. Test Data
+
+The following predefined credentials will be used during testing:
+
+| Username                | Password     | Purpose                              |
+| ----------------------- | ------------ | ------------------------------------ |
+| standard_user           | secret_sauce | Valid user testing                   |
+| locked_out_user         | secret_sauce | Locked user testing                  |
+| problem_user            | secret_sauce | Problem user behavior testing        |
+| performance_glitch_user | secret_sauce | Performance-related behavior testing |
+
+Additional test data will include:
+
+* Valid and invalid usernames
+* Valid and invalid passwords
+* Blank input fields
+* Special characters
+* Very long input values
+* Invalid postal codes
+* Multiple products
+* Empty cart scenarios
+
+---
+
+## 7. Entry Criteria
+
+Testing will begin when the following conditions are satisfied:
+
+1. The SauceDemo application is accessible.
+2. The required test environment is available.
+3. Supported browser is installed and working.
+4. Valid and invalid test credentials are available.
+5. Test scenarios and test cases are prepared.
+6. Required test data is available.
+7. No blocking environment issue prevents testing.
+
+---
+
+## 8. Exit Criteria
+
+Testing will be considered complete when:
+
+1. All planned critical and high-priority test cases have been executed.
+2. Major and critical defects have been identified and reported.
+3. Test execution results have been documented.
+4. Failed test cases have corresponding defect reports.
+5. Retesting of fixed critical defects has been completed.
+6. Regression testing has been performed for affected functionality.
+7. The final test summary has been prepared.
+
+---
+
+## 9. Defect Management
+
+All identified defects will be documented with sufficient information for reproduction.
+
+Each bug report should contain:
+
+* Bug ID
+* Bug Title
+* Module
+* Description
+* Preconditions
+* Steps to Reproduce
+* Expected Result
+* Actual Result
+* Severity
+* Priority
+* Environment
+* Test Data
+* Screenshots/Evidence
+* Bug Status
+
+Defects will be categorized based on their **Severity** and **Priority**.
+
+---
+
+## 10. Severity Levels
+
+| Severity | Description                                                |
+| -------- | ---------------------------------------------------------- |
+| Critical | Application or major functionality is completely blocked   |
+| High     | Major functionality is not working correctly               |
+| Medium   | Functionality works incorrectly but a workaround may exist |
+| Low      | Minor UI, cosmetic, or usability issue                     |
+
+---
+
+## 11. Test Deliverables
+
+The following testing deliverables will be prepared:
+
+1. Test Plan
+2. Test Scenarios
+3. Test Cases
+4. Test Data
+5. Bug Reports
+6. Test Execution Results
+7. Screenshots/Evidence
+8. Final Test Summary Report
+
+---
+
+## 12. Risks and Mitigation
+
+| Risk                            | Mitigation                                     |
+| ------------------------------- | ---------------------------------------------- |
+| Application unavailable         | Verify application availability before testing |
+| Browser compatibility issue     | Test using supported browsers                  |
+| Test data issue                 | Maintain valid and invalid test data           |
+| Environment instability         | Verify environment before execution            |
+| Defect fixing delays            | Prioritize critical and high-severity defects  |
+| Unexpected application behavior | Perform negative and edge-case testing         |
+
+---
+
+## 13. Assumptions
+
+* The SauceDemo application is available throughout the testing period.
+* The provided test credentials are valid.
+* The application is accessible through a supported web browser.
+* No backend or database changes are required for manual testing.
+* Testing will be performed based on the currently available application functionality.
+
+---
+
+## 14. Overall Test Approach
+
+Testing will follow a structured manual testing approach.
+
+First, the application will be validated for basic accessibility and login functionality. After successful login, product listing, sorting, product details, cart, and checkout functionality will be tested.
+
+Both positive and negative scenarios will be covered. Special attention will be given to boundary conditions and edge cases such as empty cart checkout, multiple products, removing all products, page refresh, browser Back navigation, invalid inputs, and special characters.
+
+Any identified defects will be documented, prioritized, and retested after fixes.
+
+---
+
+## 15. Test Completion Criteria
+
+The testing activity will be considered successfully completed when all planned test cases have been executed, critical functionality has been validated, major defects have been reported and retested where applicable, and the final test results have been documented.
+
+**Prepared By:** QA Tester
+**Testing Type:** Manual Testing
+**Application:** SauceDemo
+**Status:** Test Plan Prepared
