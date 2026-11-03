@@ -94,3 +94,5 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.9.25.1</version>
         </dependency>
+
+        </dependencies>
